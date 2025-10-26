@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TecStore — Teléfonos (Perú)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Use Inter for a clean UI; keep Poppins as fallback in CSS font stack -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top announcement bar (Perú) -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="left">Envío gratis a partir de S/199.99</div>
+      <div class="right">Envíos a todo el Perú · Teléfono: <a href="tel:+51948228919">+51 948 228 919</a></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="left-group">
+        <button class="search-toggle" aria-label="Buscar">🔍</button>
+        <h1 class="logo">Tec<span class="logo-accent">Store</span></h1>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#">Inicio</a>
+        <a href="#productos">Nuestros productos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="right-group" style="position:relative">
+        <span id="user-display" class="user-display" style="margin-right:.4rem;color:#fff;display:none;font-weight:600"></span>
+        <button id="account-btn" class="icon-btn" aria-haspopup="true" aria-expanded="false" aria-controls="account-menu" aria-label="Cuenta">👤</button>
+        <div id="account-menu" class="account-menu" role="menu" aria-hidden="true">
+          <a href="login.html" role="menuitem" class="menu-link">Iniciar sesión</a>
+          <a href="register.html" role="menuitem" class="menu-link">Crear cuenta</a>
+        </div>
+        <button id="cart-btn" class="cart-btn" aria-label="Abrir carrito">🛒 <span id="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Teléfonos modernos, precios reales</h2>
+          <p>Diseño cuidado, cámaras excelentes y baterías para todo el día. Compra con envío rápido.</p>
+          <a class="btn" href="#productos">Ver teléfonos</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Teléfono destacado" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'><rect fill=%27%23f3f4f6%27 width=\'100%25\' height=\'100%25\'/><text x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=%27%236b7280%27 font-family=\'Arial\' font-size=\'24\'>Imagen%20no%20disponible</text></svg>'">
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="productos container">
+      <h3 class="section-title">Teléfonos destacados</h3>
+      <div id="productos-grid" class="grid">
+        <!-- Tarjetas estáticas generadas para funcionar sin JavaScript -->
+        <article class="card">
+          <img src="Fotos/Apple Iphone 14.jpeg" alt="Apple iPhone 14">
+          <div class="card-title">Apple iPhone 14</div>
+          <div class="card-desc">Pantalla 6.1" Super Retina, doble cámara 12MP, iOS, 128GB</div>
+          <div class="price">S/ 3,599.00</div>
+          <div class="card-actions">
+            <a class="btn" href="product-iphone14.html">Ver</a>
+            <button class="btn primary" data-add="1" data-name="Apple iPhone 14" data-price="3599" data-img="foto/apple-iphone-14.jpg">Añadir</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Fotos\Samsung Galaxy S23.PNG" alt="Samsung Galaxy S23">
+          <div class="card-title">Samsung Galaxy S23</div>
+          <div class="card-desc">Pantalla 6.1" Dynamic AMOLED, cámara pro 50MP, 128GB</div>
+          <div class="price">S/ 3,199.00</div>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver</a>
+            <button class="btn primary" data-add="2" data-name="Samsung Galaxy S23" data-price="3199" data-img="foto/samsung-galaxy-s23.jpg">Añadir</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Fotos\Google Pixel 7.png" alt="Google Pixel 7">
+          <div class="card-title">Google Pixel 7</div>
+          <div class="card-desc">Pantalla 6.3" AMOLED, cámara computacional 50MP, 128GB</div>
+          <div class="price">S/ 2,499.00</div>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver</a>
+            <button class="btn primary" data-add="3" data-name="Google Pixel 7" data-price="2499" data-img="foto/google-pixel-7.jpg">Añadir</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Fotos\Xiaomi 13.png" alt="Xiaomi 13">
+          <div class="card-title">Xiaomi 13</div>
+          <div class="card-desc">Pantalla 6.36" AMOLED, rendimiento elevado, cámara 50MP</div>
+          <div class="price">S/ 2,799.00</div>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver</a>
+            <button class="btn primary" data-add="4" data-name="Xiaomi 13" data-price="2799" data-img="foto/xiaomi-13.jpg">Añadir</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Fotos\OnePlus 11.png" alt="OnePlus 11">
+          <div class="card-title">OnePlus 11</div>
+          <div class="card-desc">Pantalla 6.7" Fluid AMOLED, carga rápida 100W, 256GB</div>
+          <div class="price">S/ 2,899.00</div>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver</a>
+            <button class="btn primary" data-add="5" data-name="OnePlus 11" data-price="2899" data-img="foto/oneplus-11.jpg">Añadir</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Fotos\Motorola Edge 40.png" alt="Motorola Edge 40">
+          <div class="card-title">Motorola Edge 40</div>
+          <div class="card-desc">Pantalla 6.55" pOLED, batería para todo el día, buena relación calidad-precio</div>
+          <div class="price">S/ 1,999.00</div>
+          <div class="card-actions">
+            <a class="btn" href="#">Ver</a>
+            <button class="btn primary" data-add="6" data-name="Motorola Edge 40" data-price="1999" data-img="foto/motorola-edge-40.jpg">Añadir</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="ofertas" class="container ofertas">
+      <h3>Ofertas</h3>
+      <p>Promociones temporales y descuentos por trade-in.</p>
+    </section>
+
+    <section id="contacto" class="container contacto">
+      <h3>Contacto</h3>
+      <p>¿Tienes dudas? Escríbenos y te responderemos en menos de 24 horas.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>Teléfono: <a href="tel:+51948228919">+51 948 228 919</a><br>Correo: <a href="mailto:contacto@tecstore.pe">contacto@tecstore.pe</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <p>Instagram · Facebook · TikTok</p>
+      </div>
+  <div class="footer-col">© 2025 TecStore — Hecho con ♥</div>
+    </div>
+  </footer>
+
+  <!-- Modal carrito -->
+  <div id="cart-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-cart" class="close">×</button>
+      <h3>Tu carrito</h3>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <strong>Total: <span id="cart-total">0.00</span></strong>
+        <button id="checkout-btn" class="btn primary">Finalizar compra</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal checkout simple -->
+  <div id="checkout-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-checkout" class="close">×</button>
+      <h3>Checkout</h3>
+      <form id="checkout-form">
+        <label>Nombre
+          <input type="text" name="name" required />
+        </label>
+        <label>Correo
+          <input type="email" name="email" required />
+        </label>
+        <label>Dirección
+          <input type="text" name="address" required />
+        </label>
+        <button type="submit" class="btn primary">Enviar pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <a class="whatsapp-fab" href="https://wa.me/51948228919?text=Hola%20TecStore!%20Quisiera%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
+</body>
+</html>

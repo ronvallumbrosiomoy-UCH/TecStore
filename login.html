@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Iniciar sesión — TecStore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">TecStore</h1>
+    </div>
+  </header>
+
+  <main class="container" style="padding:2rem 1rem">
+    <h2>Iniciar sesión</h2>
+    <form id="login-form" style="max-width:420px;margin-top:1rem">
+      <label>Correo
+        <input type="email" name="email" required />
+      </label>
+      <label>Contraseña
+        <input type="password" name="password" required />
+      </label>
+      <button class="btn primary" type="submit">Entrar</button>
+    </form>
+    <div class="form-feedback" id="login-feedback" aria-live="polite" style="margin:.5rem 0;color:#b91c1c"></div>
+    <p style="margin-top:1rem">¿No tienes cuenta? <a href="register.html">Crear cuenta</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">© 2025 TecStore</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

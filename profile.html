@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Completa tu perfil — TecStore</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>main{padding:2rem 1rem} form{max-width:640px}</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">TecStore</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Completa tu perfil</h2>
+    <p>Gracias por registrarte. Completa estos datos para que podamos procesar tus pedidos.</p>
+    <form id="profile-form" style="margin-top:1rem">
+      <label>Nombre completo
+        <input type="text" name="fullname" required />
+      </label>
+      <label>Teléfono
+        <input type="tel" name="phone" required placeholder="Ej: +519xxxxxxxx" />
+      </label>
+      <label>Dirección
+        <input type="text" name="address" required />
+      </label>
+      <label>DNI / Documento
+        <input type="text" name="doc" />
+      </label>
+      <label>Código postal
+        <input type="text" name="postal" />
+      </label>
+      <div class="form-feedback" id="profile-feedback" aria-live="polite" style="margin:.5rem 0;color:#b91c1c"></div>
+      <button class="btn primary" type="submit">Guardar perfil</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">© 2025 TecStore</div>
+  </footer>
+</body>
+</html>

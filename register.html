@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crear cuenta — TecStore</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>main{padding:2rem 1rem} form{max-width:520px}</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">TecStore</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Crear cuenta</h2>
+    <form id="register-form" style="margin-top:1rem">
+      <label>Correo
+        <input type="email" name="email" required />
+      </label>
+      <label>Contraseña
+        <input type="password" name="password" required minlength="6" />
+      </label>
+      <label>Repetir contraseña
+        <input type="password" name="password2" required minlength="6" />
+      </label>
+      <label>Nombre completo
+        <input type="text" name="fullname" placeholder="Ej: Juan Pérez" required aria-required="true" />
+      </label>
+      <label>Fecha de nacimiento
+        <input type="date" name="birthdate" required aria-required="true" />
+      </label>
+      <label>Código postal
+        <input type="text" name="postal" placeholder="Ej: 15001" pattern="^\d{5}$" title="5 dígitos" required aria-required="true" />
+      </label>
+      <label>Dirección
+        <input type="text" name="address" placeholder="Dirección de envío" required aria-required="true" />
+      </label>
+      <label>Número de DNI / Documento
+        <input type="text" name="dni" placeholder="DNI (8 dígitos)" pattern="^\d{8}$" title="DNI: 8 dígitos" required aria-required="true" />
+      </label>
+      <label>Teléfono
+        <input type="tel" name="phone" placeholder="Ej: +519xxxxxxxx" pattern="^(\+51)?\d{9}$" title="9 dígitos o con prefijo +51" required aria-required="true" />
+      </label>
+
+      <div class="form-feedback" id="register-feedback" aria-live="polite" style="margin:.5rem 0;color:#b91c1c"></div>
+      <button class="btn primary" type="submit">Crear cuenta</button>
+    </form>
+    <p style="margin-top:1rem">¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">© 2025 TecStore</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
